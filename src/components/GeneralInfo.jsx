@@ -6,19 +6,17 @@ const currentYear = new Date().getFullYear();
 const GeneralInfo = () => {
   return (
     <Paper sx={{ backgroundColor: "cardBg.main" }} elevation={2}>
-      <Stack sx={{ p: "20px" }}>
+      <Stack sx={{ p: 3 }}>
         <Typography variant="h5" sx={{ fontWeight: 500 }}>
           Giannis Savvidis
         </Typography>
 
-        <Typography variant="body2" sx={{ textAlign: "center" }}>
-          Fullstack web developer
-        </Typography>
+        <Typography variant="body2">Fullstack web developer</Typography>
       </Stack>
 
       <Divider />
 
-      <Stack sx={{ p: "20px" }} gap={1}>
+      <Stack sx={{ p: 3 }} gap={1}>
         <Stack direction="row" sx={{ alignItems: "center" }} gap={1}>
           <Typography variant="body2" sx={{ fontWeight: 600 }}>
             Age:
@@ -50,7 +48,7 @@ const GeneralInfo = () => {
           </Typography>
         </Stack>
 
-        <Stack sx={{ pt: 2 }} gap={1}>
+        <Stack sx={{ pt: 1 }} gap={1}>
           <Button
             variant="contained"
             color="primary"

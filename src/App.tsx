@@ -1,10 +1,21 @@
 import { ThemeProvider } from "@mui/material/styles";
 import { useMemo, useState } from "react";
 import createCustomTheme from "./theme";
-import { CssBaseline, IconButton, Stack } from "@mui/material";
+import {
+  Container,
+  CssBaseline,
+  Divider,
+  IconButton,
+  Paper,
+  Stack,
+} from "@mui/material";
 import { useMount } from "react-use";
 import { LightMode } from "@mui/icons-material";
 import GeneralInfo from "./components/GeneralInfo";
+import Skills from "./components/Skills";
+import ProfessionalExperience from "./components/ProfessionalExperience";
+import Education from "./components/Education";
+import PersonalProjects from "./components/PersonalProjects";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -48,23 +59,20 @@ const App = () => {
       <Stack
         sx={{
           height: "100vh",
-          padding: "20px",
-          justifyContent: "center",
-          alignItems: "start",
+          justifyContent: "start",
+          alignItems: "center",
+          py: 3,
         }}
-        direction="row"
       >
-        <GeneralInfo />
-
-        <Stack sx={{ width: "1000px" }}>
+        <Container sx={{ display: "flex", flexDirection: "column" }}>
           <IconButton
             sx={{
               backgroundColor: "primary.main",
-              alignSelf: "start",
-              ml: "auto",
+              alignSelf: "end",
               "&:hover": {
                 backgroundColor: "primary.main",
               },
+              mb: 3,
             }}
             size="small"
             color="primary"
@@ -72,7 +80,30 @@ const App = () => {
           >
             <LightMode color="secondary" />
           </IconButton>
-        </Stack>
+
+          <Stack direction="row" gap={3}>
+            <Stack gap={3}>
+              <GeneralInfo />
+
+              <Skills />
+            </Stack>
+
+            <Paper
+              sx={{ backgroundColor: "cardBg.main", p: 3, flexGrow: 1 }}
+              elevation={2}
+            >
+              <ProfessionalExperience />
+
+              <Divider />
+
+              <Education />
+
+              <Divider />
+
+              <PersonalProjects />
+            </Paper>
+          </Stack>
+        </Container>
       </Stack>
     </ThemeProvider>
   );
