@@ -16,6 +16,7 @@ import Skills from "./components/Skills";
 import ProfessionalExperience from "./components/ProfessionalExperience";
 import Education from "./components/Education";
 import PersonalProjects from "./components/PersonalProjects";
+import Hobbies from "./components/Hobbies";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -58,13 +59,17 @@ const App = () => {
 
       <Stack
         sx={{
-          height: "100vh",
+          minHeight: "100vh",
           justifyContent: "start",
           alignItems: "center",
           py: 3,
         }}
       >
-        <Container sx={{ display: "flex", flexDirection: "column" }}>
+        <Container
+          sx={{ display: "flex", flexDirection: "column" }}
+          component={Stack}
+          gap={3}
+        >
           <IconButton
             sx={{
               backgroundColor: "primary.main",
@@ -72,7 +77,6 @@ const App = () => {
               "&:hover": {
                 backgroundColor: "primary.main",
               },
-              mb: 3,
             }}
             size="small"
             color="primary"
@@ -91,6 +95,8 @@ const App = () => {
             <Paper
               sx={{ backgroundColor: "cardBg.main", p: 3, flexGrow: 1 }}
               elevation={2}
+              component={Stack}
+              gap={3}
             >
               <ProfessionalExperience />
 
@@ -101,6 +107,10 @@ const App = () => {
               <Divider />
 
               <PersonalProjects />
+
+              <Divider />
+
+              <Hobbies />
             </Paper>
           </Stack>
         </Container>
