@@ -73,7 +73,7 @@ const App = () => {
           <IconButton
             sx={{
               backgroundColor: "primary.main",
-              alignSelf: "end",
+              alignSelf: "start",
               "&:hover": {
                 backgroundColor: "primary.main",
               },
@@ -85,7 +85,15 @@ const App = () => {
             <LightMode color="secondary" />
           </IconButton>
 
-          <Stack direction="row" gap={3}>
+          <Stack
+            sx={{
+              flexDirection: {
+                xs: "column",
+                md: "row",
+              },
+            }}
+            gap={3}
+          >
             <Stack gap={3}>
               <GeneralInfo />
 

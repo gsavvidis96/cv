@@ -10,14 +10,16 @@ const Skills = () => {
     >
       <Typography variant="h6">Core Skills</Typography>
 
-      <Chip label="Typescript" />
-      <Chip label="React" />
-      <Chip label="Next" />
-      <Chip label="Vue" />
-      <Chip label="NodeJS" />
-      <Chip label="PostgreSQL" />
-      <Chip label="MongoDB" />
-      <Chip label="AWS" />
+      <Stack gap={1} sx={{ maxWidth: 240 }}>
+        <Chip label="Typescript" />
+        <Chip label="React" />
+        <Chip label="Next" />
+        <Chip label="Vue" />
+        <Chip label="NodeJS" />
+        <Chip label="PostgreSQL" />
+        <Chip label="MongoDB" />
+        <Chip label="AWS" />
+      </Stack>
     </Paper>
   );
 };

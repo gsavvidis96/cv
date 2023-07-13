@@ -53,44 +53,46 @@ const GeneralInfo = () => {
           </Typography>
         </Stack>
 
-        <Stack sx={{ pt: 1 }} gap={1}>
-          <Button
-            variant="contained"
-            color="primary"
-            size="small"
-            startIcon={<GitHub />}
-            sx={{ textTransform: "none" }}
-            component="a"
-            href="https://github.com/gsavvidis96"
-            target="_blank"
-          >
-            GitHub
-          </Button>
+        <Stack sx={{ pt: 1 }}>
+          <Stack gap={1} sx={{ maxWidth: 240 }}>
+            <Button
+              variant="contained"
+              color="primary"
+              size="small"
+              startIcon={<GitHub />}
+              sx={{ textTransform: "none" }}
+              component="a"
+              href="https://github.com/gsavvidis96"
+              target="_blank"
+            >
+              GitHub
+            </Button>
 
-          <Button
-            variant="contained"
-            color="primary"
-            size="small"
-            startIcon={<LinkedIn />}
-            sx={{ textTransform: "none" }}
-            component="a"
-            href="https://www.linkedin.com/in/giannis-savvidis-22340a188/"
-            target="_blank"
-          >
-            LinkedIn
-          </Button>
+            <Button
+              variant="contained"
+              color="primary"
+              size="small"
+              startIcon={<LinkedIn />}
+              sx={{ textTransform: "none" }}
+              component="a"
+              href="https://www.linkedin.com/in/giannis-savvidis-22340a188/"
+              target="_blank"
+            >
+              LinkedIn
+            </Button>
 
-          <Button
-            variant="contained"
-            color="primary"
-            size="small"
-            startIcon={<CloudDownload />}
-            sx={{ textTransform: "none" }}
-            href="giannis_savvidis_cv.pdf"
-            target="_blank"
-          >
-            Download CV
-          </Button>
+            <Button
+              variant="contained"
+              color="primary"
+              size="small"
+              startIcon={<CloudDownload />}
+              sx={{ textTransform: "none" }}
+              href="giannis_savvidis_cv.pdf"
+              target="_blank"
+            >
+              Download CV
+            </Button>
+          </Stack>
         </Stack>
       </Stack>
     </Paper>
