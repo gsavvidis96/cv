@@ -1,12 +1,12 @@
 import { Circle, GitHub } from "@mui/icons-material";
-import { Stack, Typography } from "@mui/material";
+import { Chip, Stack, Typography } from "@mui/material";
 
 const PersonalProjects = () => {
   return (
     <Stack gap={2}>
       <Typography variant="h6">Personal Projects</Typography>
 
-      <Stack>
+      <Stack gap={1}>
         <Stack direction="row" sx={{ alignItems: "center" }} gap={1}>
           <Circle sx={{ height: "8px", width: "8px" }} />
 
@@ -19,22 +19,19 @@ const PersonalProjects = () => {
           >
             Budget Calculator
           </Typography>
-        </Stack>
 
-        <Stack sx={{ pl: "16px" }}>
-          <Stack
-            direction="row"
-            sx={{ mb: 1, alignItems: "center", color: "linkColor.main" }}
-            gap={1}
+          <Chip
+            icon={<GitHub />}
+            label="Repository"
+            size="small"
+            clickable
             component="a"
             href="https://github.com/gsavvidis96/budget-calculator"
             target="_blank"
-          >
-            <GitHub sx={{ height: "14px", width: "14px" }} />
+          />
+        </Stack>
 
-            <Typography variant="body2">GitHub Repo</Typography>
-          </Stack>
-
+        <Stack sx={{ pl: "16px" }}>
           <Typography variant="body2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
             laborum pariatur illum dolores perspiciatis explicabo excepturi

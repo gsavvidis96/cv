@@ -87,7 +87,7 @@ const GeneralInfo = () => {
             startIcon={<CloudDownload />}
             sx={{ textTransform: "none" }}
             href="giannis_savvidis_cv.pdf"
-            download
+            target="_blank"
           >
             Download CV
           </Button>
