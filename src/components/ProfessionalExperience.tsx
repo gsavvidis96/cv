@@ -30,7 +30,12 @@ const ProfessionalExperience = () => {
 
   return (
     <Stack gap={2}>
-      <Typography variant="h6">Professional Experience</Typography>
+      <Typography
+        variant="h6"
+        sx={{ textAlign: { xs: "center", md: "start" } }}
+      >
+        Professional Experience
+      </Typography>
 
       <Stack>
         <Stack direction="row" sx={{ alignItems: "center" }} gap={1}>
@@ -57,10 +62,9 @@ const ProfessionalExperience = () => {
           </Typography>
 
           <Typography variant="body2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            velit eum natus ipsum distinctio ea similique sapiente officia,
-            doloribus eligendi voluptatibus eveniet temporibus culpa enim
-            voluptatum soluta facere aperiam vero.
+            Involved in applications developed in-house, serving both
+            customer-facing and back-office needs, using React, Node.js,
+            MongoDB, AWS Lambda and the Serverless Framework.
           </Typography>
         </Stack>
       </Stack>
@@ -90,10 +94,10 @@ const ProfessionalExperience = () => {
           </Typography>
 
           <Typography variant="body2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            velit eum natus ipsum distinctio ea similique sapiente officia,
-            doloribus eligendi voluptatibus eveniet temporibus culpa enim
-            voluptatum soluta facere aperiam vero.
+            Involved in a diverse range of projects, using various technologies.
+            The most notable ones include Vue, Node.js, Capacitor.js, and
+            PostgreSQL for developing web and mobile clients, as well as backend
+            APIs.
           </Typography>
         </Stack>
       </Stack>

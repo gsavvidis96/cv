@@ -4,7 +4,12 @@ import { Chip, Stack, Typography } from "@mui/material";
 const PersonalProjects = () => {
   return (
     <Stack gap={2}>
-      <Typography variant="h6">Personal Projects</Typography>
+      <Typography
+        variant="h6"
+        sx={{ textAlign: { xs: "center", md: "start" } }}
+      >
+        Personal Projects
+      </Typography>
 
       <Stack gap={1}>
         <Stack direction="row" sx={{ alignItems: "center" }} gap={1}>
@@ -33,10 +38,9 @@ const PersonalProjects = () => {
 
         <Stack sx={{ pl: "16px" }}>
           <Typography variant="body2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            laborum pariatur illum dolores perspiciatis explicabo excepturi
-            accusantium nesciunt. Exercitationem magni facere laboriosam nobis
-            laborum libero possimus debitis doloremque voluptates porro.
+            Created as a playground project for fun and showcasing purposes. The
+            main technologies used include TypeScript, Next.js, Supabase and
+            Prisma ORM.
           </Typography>
         </Stack>
       </Stack>

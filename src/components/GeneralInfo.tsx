@@ -6,7 +6,7 @@ const currentYear = new Date().getFullYear();
 const GeneralInfo = () => {
   return (
     <Paper
-      sx={{ backgroundColor: "cardBg.main", py: 3 }}
+      sx={{ backgroundColor: "cardBg.main", py: 3, alignItems: "center" }}
       elevation={2}
       component={Stack}
       gap={3}
@@ -19,7 +19,7 @@ const GeneralInfo = () => {
         <Typography variant="body2">Fullstack web developer</Typography>
       </Stack>
 
-      <Divider />
+      <Divider sx={{ alignSelf: "stretch" }} />
 
       <Stack sx={{ px: 3 }} gap={1}>
         <Stack direction="row" sx={{ alignItems: "center" }} gap={1}>

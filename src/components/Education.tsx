@@ -4,7 +4,12 @@ import { Stack, Typography } from "@mui/material";
 const Education = () => {
   return (
     <Stack gap={2}>
-      <Typography variant="h6">Education</Typography>
+      <Typography
+        variant="h6"
+        sx={{ textAlign: { xs: "center", md: "start" } }}
+      >
+        Education
+      </Typography>
 
       <Stack>
         <Stack direction="row" sx={{ alignItems: "center" }} gap={1}>
