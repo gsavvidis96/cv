@@ -33,7 +33,7 @@ const Education = () => {
           </Typography>
 
           <Typography variant="body2" color="text.secondary">
-            September 2014 (Not Graduated)
+            September 2014
           </Typography>
         </Stack>
       </Stack>
