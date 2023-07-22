@@ -76,7 +76,7 @@ const ProfessionalExperience = () => {
           <Typography
             variant="body1"
             component="a"
-            href="https://www.slashdata.co/"
+            href="https://codefactory.gr/"
             sx={{ color: "linkColor.main" }}
             target="_blank"
           >
