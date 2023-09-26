@@ -39,8 +39,8 @@ const PersonalProjects = () => {
         <Stack sx={{ pl: "16px" }}>
           <Typography variant="body2">
             Created as a playground project for fun and showcasing purposes. The
-            main technologies used include TypeScript, Next.js, Supabase and
-            Prisma ORM.
+            main technologies used include Nuxt, Firebase (auth module),
+            Tailwind CSS, Typescript and Prisma ORM.
           </Typography>
         </Stack>
       </Stack>

@@ -12,9 +12,10 @@ const Skills = () => {
 
       <Stack gap={1} sx={{ width: 240 }}>
         <Chip label="Typescript" />
-        <Chip label="React" />
-        <Chip label="Next.js" />
         <Chip label="Vue" />
+        <Chip label="React" />
+        <Chip label="Nuxt.js" />
+        <Chip label="Gatsby.js" />
         <Chip label="Node.js" />
         <Chip label="PostgreSQL" />
         <Chip label="MongoDB" />
