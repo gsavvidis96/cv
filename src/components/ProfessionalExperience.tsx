@@ -1,33 +1,7 @@
 import { Circle } from "@mui/icons-material";
 import { Stack, Typography } from "@mui/material";
-import { useMemo } from "react";
 
 const ProfessionalExperience = () => {
-  const slashDataTime = useMemo(() => {
-    const slashDataStart = new Date("2022-09-05");
-    const currentDate = new Date();
-
-    let diffYears = currentDate.getFullYear() - slashDataStart.getFullYear();
-    let diffMonths = currentDate.getMonth() - slashDataStart.getMonth();
-
-    if (diffMonths < 0) {
-      diffYears--;
-      diffMonths += 12;
-    }
-
-    let formattedDiffYears = `${diffYears} ${
-      diffYears === 1 ? "Year" : "Years"
-    },`;
-
-    let formattedDiffMonths = `${diffMonths} ${
-      diffMonths === 1 ? "Month" : "Months"
-    }`;
-
-    return diffYears
-      ? `${formattedDiffYears} ${formattedDiffMonths}`
-      : formattedDiffMonths;
-  }, []);
-
   return (
     <Stack gap={2}>
       <Typography
@@ -58,7 +32,7 @@ const ProfessionalExperience = () => {
           </Typography>
 
           <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-            September 2022 - Present ({slashDataTime})
+            September 2022 - Present
           </Typography>
 
           <Typography variant="body2">
@@ -90,7 +64,7 @@ const ProfessionalExperience = () => {
           </Typography>
 
           <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-            June 2019 - July 2022 (3 Years, 2 Months)
+            June 2019 - July 2022
           </Typography>
 
           <Typography variant="body2">
